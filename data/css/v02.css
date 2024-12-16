@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  width: 250px;
+  height: 360px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: 1.2s;
+  cursor: pointer;
+}
+ul li {
+  position: absolute;
+  transform-origin: left;
+}
+ul li img {
+  width: 250px;
+  height: 360px;
+  box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.2);
+}

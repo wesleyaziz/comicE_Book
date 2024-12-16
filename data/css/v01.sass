@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  text-decoration: none
+  list-style: none
+  font-family: "Rubik", sans-serif
+
+body
+  width: 100vw
+  height: 100vh
+  background-color: #444
+  display: flex
+  justify-content: center
+  align-items: center
+
+ul.v1
+  width: 250px
+  height: 360px
+  transform-style: preserve-3d
+  perspective: 1000px
+  transition: 1.2s
+  cursor: pointer
+  &:hover
+    transform: translateX(150px)
+    @for $i from 1 through 7
+      li:nth-child(#{$i})
+        transform: rotateY(-180deg)
+        transition: #{1.4 + $i*0.6}s
+  li
+    position: absolute
+    transform-origin: left
+    img
+      width: 250px
+      height: 360px
+      box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.2)
+    @for $i from 1 through 8
+      &:nth-child(#{$i})
+        transform: rotateY(#{-27 + $i * 2}deg)
+        transition: #{2.3 - ($i - 1) * 0.3}s
