@@ -70,4 +70,8 @@ Works best in modern browsers that support:
 
 ## License
 
-This project is open source and available under the MIT License.
+MIT License.
+
+## Author
+
+Wesley WONG
